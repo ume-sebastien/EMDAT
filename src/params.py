@@ -24,6 +24,7 @@ EYETRACKERTYPE = "TobiiV3" #Tobii Studio version 3x
 
 # ####################### Eye tracker specific parameters ##############################################################
 
+# ### TobiiV2-specific parameters
 # number of extra lines at the beginning of the files exported from Tobii
 # this is specific to study and is based on the number of variables defined in Tobii studio for the experiment
 NUMBEROFEXTRAHEADERLINES = 8
@@ -59,7 +60,8 @@ RAW_HEADER_LINE = 1
 #L or R for using left/right eye event when averaging both eyes measures is not possible
 MONOCULAR_EYE = "L"
 
-
+# ### TobiiV3-specific parameters
+# none 
 
 # ####################### Features generation ##############################################################
 
