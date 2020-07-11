@@ -195,7 +195,7 @@ def read_participants_Basic(q, datadir, user_list, pids, prune_length = None, ao
             evefile = "{dir}/Tobii Export/AdaptiveMSNV_Bar_Study_New test_Rec {rec}.tsv".format(dir=datadir, rec=rec)
             segfile = "{dir}/segs/{rec}.seg".format(dir=datadir, rec=rec)
             aoifile = "{dir}/finegrained_aois_per_user/dynamic_{rec}.aoi".format(dir=datadir, rec=rec)
-            #aoifile = "{dir}/intervention_aois_per_user_msnv/dynamic_{rec}_3.aoi".format(dir=datadir, rec=rec)
+            #aoifile = "{dir}/intervention_aois_per_user_msnv/dynamic_{rec}_{msnvid}.aoi".format(dir=datadir, rec=rec, msnvid="3") #change msnvid as needed
             #'''
             '''
             allfile = "{dir}/Control Tobii Export/MMD Study 1_Rec {rec}.tsv".format(dir=datadir, rec=rec)
@@ -204,7 +204,7 @@ def read_participants_Basic(q, datadir, user_list, pids, prune_length = None, ao
             evefile = "{dir}/Control Tobii Export/MMD Study 1_Rec {rec}.tsv".format(dir=datadir, rec=rec)
             segfile = "{dir}/Control_segs/{rec}.seg".format(dir=datadir, rec=rec)
             aoifile = "{dir}/control_finegrained_aois_per_user/dynamic_{rec}.aoi".format(dir=datadir, rec=rec)
-            #aoifile = "{dir}/intervention_aois_per_user_msnv/dynamic_{rec}_3.aoi".format(dir=datadir, rec=rec)
+            #aoifile = "{dir}/intervention_aois_per_user_msnv/dynamic_{rec}_{msnvid}.aoi".format(dir=datadir, rec=rec, msnvid="3") 
             '''
 
         elif params.EYETRACKERTYPE == "SMI":
